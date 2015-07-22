@@ -1,0 +1,15 @@
+{
+  "name": "react-google-maps",
+  "homepage": "https://github.com/tomchentw/react-google-maps",
+  "version": "1.7.1",
+  "_release": "1.7.1",
+  "_resolution": {
+    "type": "version",
+    "tag": "v1.7.1",
+    "commit": "ffd8545f1d22d58f1e2f38fcff5dab742436f742"
+  },
+  "_source": "git://github.com/tomchentw/react-google-maps.git",
+  "_target": "~1.7.1",
+  "_originalSource": "tomchentw/react-google-maps",
+  "_direct": true
+}
