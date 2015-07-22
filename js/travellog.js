@@ -11,8 +11,8 @@ var Travellog = React.createClass({
 		});
 
 		return <div>
-			<Table locations={ this.state.locations } />
-			<Map places={ places } />
+			<TravellogTable locations={ this.state.locations } />
+			<TravellogMap places={ places } />
 		</div>;
 	},
 	componentWillMount: function() {

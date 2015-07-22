@@ -2,7 +2,7 @@
 
 var apiKey = 'AIzaSyB0ydxHAKRpkuaKbIMRtt12XvuYjtMd2sA';
 
-var Map = React.createClass({
+var TravellogMap = React.createClass({
 	render: function(){
 
 		var places = this.props.places;
