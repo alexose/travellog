@@ -6,20 +6,24 @@ var Travellog = React.createClass({
 	mixins : [ReactFireMixin],
 	render: function() {
 
-		var places = this.state.locations.map(function(d, i){
-			return d.placename;	
-		});
+		function createUser(d,i){
+			return <TravellogUser user={d} />;
+		};
 
-		// <TravellogMap places={ places } />
-		
 		return <div>
-			<TravellogTable locations={ this.state.locations } />
-			<TravellogAuth />
-		</div>;
+			<div className="container">
+				{this.state.users.map(createUser)}
+			</div>
+			<footer className="footer">
+				<div className="container">
+					<TravellogNav users={this.state.users} />
+				</div>
+			</footer>
+		</div>
 	},
 	componentWillMount: function() {
-		var ref = new Firebase(firebaseUrl + '/alex/locations');
-		this.bindAsArray(ref, "locations");
+		var ref = new Firebase(firebaseUrl);
+		this.bindAsArray(ref, "users");
 	}
 });
 
