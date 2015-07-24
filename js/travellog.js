@@ -10,9 +10,11 @@ var Travellog = React.createClass({
 			return d.placename;	
 		});
 
+		// <TravellogMap places={ places } />
+		
 		return <div>
 			<TravellogTable locations={ this.state.locations } />
-			<TravellogMap places={ places } />
+			<TravellogAuth />
 		</div>;
 	},
 	componentWillMount: function() {
